@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="XD"
+          fetch="https://github.com/ImSpiDy" />
+  
+  <remote name="NK"
+          fetch="https://github.com/projects-nexus" />
+  
+  <project path="vendor/xiaomi/lavender" name="vendor_xiaomi_lavender-13" remote="XD" revision="T" />
+  
+  <project path="kernel/xiaomi/lavender" name="xtreme_kernel_lavender-4.4" remote="NK" revision="a13-qti-camfix" />
+ 
+</manifest>
