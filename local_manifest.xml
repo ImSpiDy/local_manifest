@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>      
+      
+<remote name="EMY"
+          fetch="https://github.com/wHo-EM-i" />
+
+<remote name="XD"
+          fetch="https://github.com/ImSpiDy" />
+
+<!-- caf blobs -->
+        <remove-project name="android_hardware_qcom_audio" />
+        <remove-project name="android_hardware_qcom_display" />
+        <remove-project name="android_hardware_qcom_media" />
+        <project path="hardware/qcom-caf/sdm660/audio" name="android_hardware_qcom_audio" groups="qcom,qcom_audio" revision="13-caf-sdm660" remote="EMY" clone-depth="1" />
+        <project path="hardware/qcom-caf/sdm660/display" name="android_hardware_qcom_display" groups="pdk,qcom,qcom_display" revision="13-caf_4.19" remote="EMY" clone-depth="1" />
+        <project path="hardware/qcom-caf/sdm660/media" name="android_hardware_qcom_media" groups="qcom,qcom_media" revision="13-caf-sdm660" remote="EMY" clone-depth="1" />
+
+<!-- VT and KT -->
+        <project path="vendor/xiaomi/lavender" name="android_vendor_xiaomi_lavender" remote="EMY" revision="T-4.19-WIP" />
+        <project path="kernel/xiaomi/lavender" name="kernel_xiaomi_lavender-4.19" remote="XD" revision="X1" /> 
+
+</manifest>
+
